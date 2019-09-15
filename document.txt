@@ -1,0 +1,41 @@
+offical docs - https://docs.nestjs.com/
+
+
+CLI commands
+To install nestJs globally --> npm i -g @nestjs/cli
+To create new project --> nest new <project_name>
+to run project --> npm run start
+to create module --> nest g module <module_name> i.e nest g module task
+to create controller --> nest g controller tasks
+to create service --> nest g service tasks
+to create unique id --> npm install --save uuid
+
+To install Pipe (For validation)
+npm install class-validator class-transformer --save
+npm install bcrypt --save
+
+------------------Application Structure -----------
+
+---TasksModule---           		 -----AuthModule------
+TaskController TaskEntity		AuthController   UserRepository
+TaskService    TaskRepository 	 	AuthService	 JwtStrategy
+StatusValidationPipe			UserEntity
+
+Objecttives: Backend & Architecture
+ Develop production ready REST APIs
+ CRUD operation
+ Error handling
+ Data transfer objects
+ System modularity
+ Backend development best practices
+ Configuration management
+ Logging
+ Security best practices
+
+Object Relational Mapping (ORM) and TypeORM
+ORM is a technique that let you query and manipulate data from database, using object-oriented paradigm
+TypeORM is a ORM library that can run in Node.js and be used with Typescript (or Javascript).
+Helps us define and manage entities , repo, col,relations, replication, indices,queries,logging etc
+official site --> https://typeorm.io
+pacage - npm install @nestjs/typeorm typeorm pg --save 
+
